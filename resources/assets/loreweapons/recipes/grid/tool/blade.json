@@ -1,0 +1,64 @@
+[
+    {
+        "ingredientPattern": "T,S",
+        "ingredients": {
+            "T": { "type": "item", "code": "loreweapons:bladehead-gladius-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"] },
+            "S": { "type": "item", "code": "game:stick" }
+        },
+        "width": 1,
+        "height": 2,
+        "output": { "type": "item", "code": "loreweapons:blade-gladius-{metal}" }
+    },
+    {
+        "ingredientPattern": "T,S",
+        "ingredients": {
+            "T": { "type": "item", "code": "loreweapons:bladehead-arming-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"] },
+            "S": { "type": "item", "code": "game:stick" }
+        },
+        "width": 1,
+        "height": 2,
+        "output": { "type": "item", "code": "loreweapons:blade-arming-{metal}" }
+    },
+    {
+        "ingredientPattern": "T,S",
+        "ingredients": {
+            "T": { "type": "item", "code": "loreweapons:bladehead-claymore-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"] },
+            "S": { "type": "item", "code": "game:stick" }
+        },
+        "width": 1,
+        "height": 2,
+        "output": { "type": "item", "code": "loreweapons:blade-claymore-{metal}" }
+    },
+    {
+        "ingredientPattern": "T,S",
+        "ingredients": {
+            "T": { "type": "item", "code": "loreweapons:bladehead-sabre-*", "name": "metal", "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"] },
+            "S": { "type": "item", "code": "game:stick" }
+        },
+        "width": 1,
+        "height": 2,
+        "output": { "type": "item", "code": "loreweapons:blade-sabre-{metal}" }
+    },
+    {
+        "ingredientPattern": "T,P,S",
+        "ingredients": {
+            "T": { "type": "item", "code": "loreweapons:bladehead-*-steel", "name": "type" },
+            "S": { "type": "item", "code": "game:stick" },
+            "P": { "type": "item", "code": "game:metalplate-gold" }
+        },
+        "width": 1,
+        "height": 3,
+        "output": { "type": "item", "code": "loreweapons:blade-{type}-gold" }
+    },
+    {
+        "ingredientPattern": "T,P,S",
+        "ingredients": {
+            "T": { "type": "item", "code": "loreweapons:bladehead-*-steel", "name": "type" },
+            "S": { "type": "item", "code": "game:stick" },
+            "P": { "type": "item", "code": "game:metalplate-silver" }
+        },
+        "width": 1,
+        "height": 3,
+        "output": { "type": "item", "code": "loreweapons:blade-{type}-silver" }
+    }
+]

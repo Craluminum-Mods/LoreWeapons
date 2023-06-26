@@ -1,0 +1,145 @@
+{
+    "code": "spear",
+    "class": "ItemSpear",
+    "tool": "spear",
+    "damagedby": ["attacking"],
+    "creativeinventory": { "general": ["*"], "items": ["*"], "tools": ["*"], "loreweapons": ["*"] },
+    "variantgroups": [
+        { "code": "type", "states": ["boar", "voulge", "fork", "ranseur"] },
+        { "code": "metal", "states": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver"] }
+    ],
+    "attributes": {
+        "handbook": { "groupBy": ["loreweapons:spear-{type}-*"] },
+        "groundStorageTransformByType": {
+            "*-boar-*": { "translation": { "x": 0, "y": 0.65, "z": 0.61 }, "rotation": { "x": 16, "y": 90, "z": 90 }, "scale": 0.85 },
+            "*-voulge-*": { "translation": { "x": 0.24, "y": 0.65, "z": 0.516 }, "rotation": { "x": 16, "y": 130, "z": 90 }, "scale": 0.85 },
+            "*-fork-*": { "translation": { "x": -0.25, "y": 0.65, "z": 0.11 }, "rotation": { "x": 16, "y": 0, "z": 90 }, "scale": 0.85 },
+            "*-ranseur-*": { "translation": { "x": 0, "y": 0.93, "z": -0.11 }, "rotation": { "x": 16, "y": -90, "z": 90 }, "scale": 0.85 }
+        },
+        "damageByType": {
+            "*-copper": 5.75,
+            "*-bismuthbronze": 6.5,
+            "*-tinbronze": 7.5,
+            "*-blackbronze": 8,
+            "*-gold": 8.25,
+            "*-silver": 8.25
+        },
+        "spearEntityCode": "loreweapons:spear-{type}-{metal}",
+        "toolrackTransformByType": {
+            "*-voulge-*": { "translation": { "x": -0.35, "y": 0.3, "z": 0.5 }, "rotation": { "x": 60, "y": 1, "z": -1 } },
+            "*-fork-*": { "translation": { "x": -0.35, "y": -0.27, "z": 0.5 }, "rotation": { "x": 125, "y": 1, "z": -1 } },
+            "*-ranseur-*": { "translation": { "x": -0.14, "y": 0.05, "z": 0.5 }, "rotation": { "x": 89, "y": 1, "z": -1 } },
+            "*-boar-*": { "translation": { "x": -0.35, "y": 0.05, "z": 0.5 }, "rotation": { "x": 89, "y": 1, "z": -1 } }
+        }
+    },
+    "behaviors": [
+        {
+            "name": "LoreWeapons.CbName",
+            "properties": {
+                "translationName": "item-spear-{type}-ruined",
+                "translationPart": "material-{metal}"
+            }
+        },
+        {
+            "name": "GroundStorable",
+            "properties": {
+                "layout": "WallHalves",
+                "wallOffY": 2,
+                "sprintKey": true,
+                "selectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1 },
+                "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 }
+            }
+        }
+    ],
+    "shape": { "base": "game:item/tool/spear/{type}" },
+    "textures": {
+        "blackbronze": { "base": "game:block/metal/ingot/{metal}" },
+        "metal": { "base": "game:block/metal/ingot/{metal}" }
+    },
+    "heldTpHitAnimation": "spearhit",
+    "attackRange": 3.5,
+    "attackpowerbytype": {
+        "*-copper": 2.75,
+        "*-bismuthbronze": 3.25,
+        "*-tinbronze": 3.75,
+        "*-blackbronze": 4,
+        "*-gold": 4.25,
+        "*-silver": 4.25
+    },
+    "durabilitybytype": {
+        "*-copper": 140,
+        "*-tinbronze": 250,
+        "*-bismuthbronze": 210,
+        "*-blackbronze": 300,
+        "*-gold": 320,
+        "*-silver": 320
+    },
+    "guiTransformByType": {
+        "*-voulge-*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -180, "y": 128, "z": 38 },
+            "origin": { "x": 1.29, "y": 0, "z": 0.5 },
+            "scale": 2.26
+        },
+        "*-ranseur-*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -175, "y": 140, "z": 38 },
+            "origin": { "x": 1.19, "y": 0, "z": 0.6 },
+            "scale": 2.26
+        },
+        "*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -60, "y": 124, "z": 6 },
+            "origin": { "x": 1.19, "y": 0, "z": 0.5 },
+            "scale": 2.26
+        }
+    },
+    "fpHandTransformByType": {
+        "*-voulge-*": {
+            "translation": { "x": 0.1, "y": 0.4, "z": 0.16 },
+            "rotation": { "x": -82, "y": 90, "z": 96 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 2.45
+        },
+        "*": {
+            "translation": { "x": 0.1, "y": 0.4, "z": 0.16 },
+            "rotation": { "x": -82, "y": 180, "z": 96 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 2.45
+        }
+    },
+    "groundTransformByType": {
+        "*-voulge-*": {
+            "translation": { "x": 0, "y": 0.05, "z": 0 },
+            "rotation": { "x": 68, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 3.4
+        },
+        "*-fork-*": {
+            "translation": { "x": 0, "y": 0.05, "z": 0 },
+            "rotation": { "x": -90, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 3.4
+        },
+        "*": {
+            "translation": { "x": 0, "y": 0.05, "z": 0 },
+            "rotation": { "x": 90, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 3.4
+        }
+    },
+    "tpHandTransformByType": {
+        "*-voulge-*": {
+            "translation": { "x": -1.24, "y": 0.03, "z": -0.61 },
+            "rotation": { "x": 0, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 0.8
+        },
+        "*": {
+            "translation": { "x": -1.24, "y": 0.03, "z": -0.61 },
+            "rotation": { "x": -90, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 0.8
+        }
+    }
+}

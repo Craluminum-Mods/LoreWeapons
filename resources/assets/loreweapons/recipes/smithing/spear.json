@@ -1,0 +1,122 @@
+[
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "gold",
+                "silver"
+            ]
+        },
+        "pattern": [
+            [
+                "____####",
+                "_#####__",
+                "#######_",
+                "#######_",
+                "_#####__",
+                "____####"
+            ]
+        ],
+        "name": "Spear",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:spearhead-boar-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "gold",
+                "silver"
+            ]
+        },
+        "pattern": [
+            [
+                "____####",
+                "_#####__",
+                "#######_",
+                "#######_",
+                "_#####__",
+                "____####"
+            ]
+        ],
+        "name": "Spear",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:spearhead-voulge-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "gold",
+                "silver"
+            ]
+        },
+        "pattern": [
+            [
+                "____####",
+                "_#####__",
+                "#######_",
+                "#######_",
+                "_#####__",
+                "____####"
+            ]
+        ],
+        "name": "Spear",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:spearhead-fork-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "gold",
+                "silver"
+            ]
+        },
+        "pattern": [
+            [
+                "____####",
+                "_#####__",
+                "#######_",
+                "#######_",
+                "_#####__",
+                "____####"
+            ]
+        ],
+        "name": "Spear",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:spearhead-ranseur-{metal}"
+        }
+    }
+]

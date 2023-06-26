@@ -1,0 +1,122 @@
+[
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "gold",
+                "iron",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "_###########____",
+                "______######____",
+                "________________"
+            ]
+        ],
+        "name": "Knife",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:knifeblade-dagger-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "gold",
+                "iron",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "_###########____",
+                "______######____",
+                "________________"
+            ]
+        ],
+        "name": "Knife",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:knifeblade-stiletto-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "gold",
+                "iron",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "_###########____",
+                "______######____",
+                "________________"
+            ]
+        ],
+        "name": "Knife",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:knifeblade-khanjar-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "gold",
+                "iron",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "_###########____",
+                "______######____",
+                "________________"
+            ]
+        ],
+        "name": "Knife",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:knifeblade-baselard-{metal}"
+        }
+    }
+]

@@ -1,0 +1,143 @@
+{
+    "code": "spearhead",
+    "creativeinventory": { "general": ["*"], "items": ["*"], "loreweapons": ["*"] },
+    "variantgroups": [
+        { "code": "type", "states": ["boar", "voulge", "fork", "ranseur"] },
+        { "code": "metal", "states": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver"] }
+    ],
+    "attributes": {
+        "handbook": { "groupBy": ["loreweapons:spearhead-{type}-*"] },
+        "groundStorageTransformByType": {
+            "*-ranseur-*": {
+                "translation": { "x": 0.05, "y": 0, "z": 1.4 },
+                "rotation": { "x": -90, "y": 0, "z": 45 },
+                "origin": { "x": 0, "y": -0.4, "z": 0 },
+                "scale": 0.8
+            },
+            "*": {
+                "translation": { "x": -0.05, "y": 0, "z": 1.5 },
+                "rotation": { "x": -90, "y": 0, "z": 45 },
+                "origin": { "x": 0, "y": -0.39, "z": 0 },
+                "scale": 0.8
+            }
+
+            // "*-boar-*": {
+            //     "translation": { "x": -0.05, "y": 0, "z": 1.5 },
+            //     "rotation": { "x": -90, "y": 0, "z": 45 },
+            //     "origin": { "x": 0, "y": -0.4, "z": 0 },
+            //     "scale": 0.8
+            // },
+
+            // "*-voulge-*": {
+            //     "translation": { "x": 0, "y": 0, "z": 1.4 },
+            //     "rotation": { "x": -90, "y": 0, "z": 45 },
+            //     "origin": { "x": 0, "y": -0.39, "z": 0 },
+            //     "scale": 0.8
+            // },
+        }
+    },
+    "behaviors": [
+        {
+            "name": "LoreWeapons.CbName",
+            "properties": {
+                "translationName": "loreweapons:item-spearhead-{type}",
+                "translationPart": "material-{metal}"
+            }
+        },
+        {
+            "name": "GroundStorable",
+            "properties": {
+                "layout": "Quadrants",
+                "selectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1 },
+                "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 }
+            }
+        }
+    ],
+    "shape": { "base": "game:item/tool/spear/{type}" },
+    "textures": {
+        "blackbronze": { "base": "game:block/metal/ingot/{metal}" },
+        "metal": { "base": "game:block/metal/ingot/{metal}" },
+        "wood": { "base": "game:block/transparent" },
+        "handle": { "base": "game:block/transparent" }
+    },
+    "heldTpUseAnimation": "interactstatic",
+    "maxstacksize": 4,
+    "guiTransformByType": {
+        "*-boar-*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": 0, "y": 180, "z": -45 },
+            "origin": { "x": 1.39, "y": 0, "z": 0.5 },
+            "scale": 2.26
+        },
+        "*-fork-*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": 0, "y": 180, "z": -45 },
+            "origin": { "x": 1.53, "y": 0, "z": 0.5 },
+            "scale": 1.9
+        },
+        "*-voulge-*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -180, "y": 128, "z": 38 },
+            "origin": { "x": 1.29, "y": 0, "z": 0.5 },
+            "scale": 2.26
+        },
+        "*-ranseur-*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -175, "y": 140, "z": 38 },
+            "origin": { "x": 1.19, "y": 0, "z": 0.6 },
+            "scale": 2.26
+        }
+    },
+    "fpHandTransform": {
+        "translation": { "x": -0.1, "y": 0, "z": 0.86 },
+        "rotation": { "x": -82, "y": 180, "z": 96 },
+        "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+        "scale": 2.45
+    },
+    "groundTransformByType": {
+        "*-voulge-*": {
+            "translation": { "x": 0, "y": 0.05, "z": 0 },
+            "rotation": { "x": 68, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 3.4
+        },
+        "*-fork-*": {
+            "translation": { "x": 0, "y": 0.05, "z": 0 },
+            "rotation": { "x": -90, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 3.4
+        },
+        "*": {
+            "translation": { "x": 0, "y": 0.05, "z": 0 },
+            "rotation": { "x": 90, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 3.4
+        }
+    },
+    "tpHandTransformByType": {
+        "*-boar-*": {
+            "translation": { "x": -0.24, "y": 0.03, "z": -0.61 },
+            "rotation": { "x": -90, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 0.8
+        },
+        "*-voulge-*": {
+            "translation": { "x": -0.44, "y": 0.03, "z": -0.61 },
+            "rotation": { "x": 0, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 0.8
+        },
+        "*-fork-*": {
+            "translation": { "x": -0.24, "y": 0.03, "z": -0.61 },
+            "rotation": { "x": -90, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 0.8
+        },
+        "*-ranseur-*": {
+            "translation": { "x": -0.44, "y": 0.03, "z": -0.61 },
+            "rotation": { "x": -90, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 0.8
+        }
+    }
+}

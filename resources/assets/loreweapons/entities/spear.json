@@ -1,0 +1,38 @@
+{
+    "code": "spear",
+    "class": "EntityProjectile",
+    "hitboxSize": { "x": 0.125, "y": 0.125 },
+    "variantgroups": [
+        { "code": "type", "states": ["boar", "voulge", "fork", "ranseur"] },
+        { "code": "metal", "states": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver"] }
+    ],
+    "client": {
+        "renderer": "Shape",
+        "shape": { "base": "game:item/tool/spear/{type}", "offsetX": -0.8125 },
+        "textures": {
+            "blackbronze": { "base": "game:block/metal/ingot/{metal}" },
+            "metal": { "base": "game:block/metal/ingot/{metal}" }
+        },
+        "behaviors": [
+            {
+                "code": "passivephysics",
+                "groundDragFactor": 1,
+                "airDragFactor": 0.25,
+                "gravityFactor": 0.75
+            },
+            { "code": "interpolateposition" }
+        ]
+    },
+    "server": {
+        "behaviors": [
+            {
+                "code": "passivephysics",
+                "groundDragFactor": 1,
+                "airDragFactor": 0.25,
+                "gravityFactor": 0.75
+            },
+            { "code": "despawn", "minSeconds": 600 }
+        ]
+    },
+    "sounds": {}
+}

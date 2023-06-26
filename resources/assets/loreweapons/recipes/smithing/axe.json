@@ -1,0 +1,130 @@
+[
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "gold",
+                "iron",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "#####____",
+                "#########",
+                "#########",
+                "#########",
+                "#####____"
+            ]
+        ],
+        "name": "Axe",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:axehead-bearded-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "gold",
+                "iron",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "#####____",
+                "#########",
+                "#########",
+                "#########",
+                "#####____"
+            ]
+        ],
+        "name": "Axe",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:axehead-battle-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "gold",
+                "iron",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "#####____",
+                "#########",
+                "#########",
+                "#########",
+                "#####____"
+            ]
+        ],
+        "name": "Axe",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:axehead-bardiche-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "gold",
+                "iron",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "#####____",
+                "#########",
+                "#########",
+                "#########",
+                "#####____"
+            ]
+        ],
+        "name": "Axe",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:axehead-double-{metal}"
+        }
+    }
+]

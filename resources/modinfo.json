@@ -1,0 +1,11 @@
+{
+    "type": "code",
+    "modid": "loreweapons",
+    "name": "Lore Weapons",
+    "description": "Craft and use ruined lore weapons yourself",
+    "authors": ["Craluminum2413"],
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.18.0-*"
+    }
+}

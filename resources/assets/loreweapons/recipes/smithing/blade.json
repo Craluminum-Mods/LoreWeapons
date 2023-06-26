@@ -1,0 +1,114 @@
+[
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "____########__",
+                "_#############",
+                "____########__"
+            ]
+        ],
+        "name": "Blade",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:bladehead-gladius-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "____########__",
+                "_#############",
+                "____########__"
+            ]
+        ],
+        "name": "Blade",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:bladehead-arming-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "____########__",
+                "_#############",
+                "____########__"
+            ]
+        ],
+        "name": "Blade",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:bladehead-claymore-{metal}"
+        }
+    },
+    {
+        "ingredient": {
+            "type": "item",
+            "code": "game:ingot-*",
+            "name": "metal",
+            "allowedVariants": [
+                "copper",
+                "tinbronze",
+                "bismuthbronze",
+                "blackbronze",
+                "silver",
+                "meteoriciron",
+                "steel"
+            ]
+        },
+        "pattern": [
+            [
+                "____########__",
+                "_#############",
+                "____########__"
+            ]
+        ],
+        "name": "Blade",
+        "output": {
+            "type": "item",
+            "code": "loreweapons:bladehead-sabre-{metal}"
+        }
+    }
+]
