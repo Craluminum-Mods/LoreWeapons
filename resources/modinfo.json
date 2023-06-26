@@ -4,7 +4,7 @@
     "name": "Lore Weapons",
     "description": "Craft and use ruined lore weapons yourself",
     "authors": ["Craluminum2413"],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "game": "1.18.0-*"
     }
